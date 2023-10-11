@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-j6vi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-fvzw-tenant/e2e-python-personal/devfile-sample-python-basic-j6vi@sha256:f38cee0ee48e77f08be4e98692c80960730ccb39cc786cc97b4170742f2bdf75
+        name: my-python
+        resources: {}
+status: {}
